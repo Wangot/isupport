@@ -1,0 +1,123 @@
+html, body {
+    height:100%;
+    width:100%;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+
+#wraper {
+	height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.navbar {
+	/*background: rgba(0,0,0,0.5);*/
+  background: rgba(255, 255, 255, 0.5);
+   /*background: transparent;*/
+   border: 0;
+   margin: 0 !important;
+   /*top: 30px;*/
+   z-index:1000;
+   border-radius: 0;
+}
+
+/* Header */
+.navbar-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-nav > li {
+  display: inline-block;
+}
+.header-nav > li + li {
+  margin-left: 15px;
+}
+
+.header-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 14px;
+  /*color: #fff;*/
+  color: #555;
+  font-weight: bold;
+}
+
+.header-nav > li > a:hover {
+  color: #F17122;
+}
+
+.header-nav > li > a.btn {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header-nav > li > a.btn:hover {
+	border-color: #F17122;
+}
+
+.header-nav > li > a:hover,
+.header-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.header-nav > .active > a,
+.header-nav > .active > a:hover,
+.header-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.fb-tab-btn {
+  position: fixed;
+  bottom: -3px;
+  right: 20px;
+  background: #5E8C00;
+  border-radius: 3px;
+}
+
+.fb-tab-btn:hover {
+  opacity: 0.8;
+}
+
+.fb-tab-btn a {
+  color : #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.modal-body {
+  max-height: 475px;
+  height: 100%;
+}
+
+.modal-body iframe {
+  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height:100%;
+  width:100%;
+  /*position:absolute;*/
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+}
+
+.modal-dialog {
+  width: 700px;
+}
