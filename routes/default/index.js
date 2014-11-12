@@ -12,4 +12,8 @@ router.get('/telering', function(req, res) {
   res.renderLayout('default/telering', { title: 'Telering' });
 });
 
+router.get('/hbv', function(req, res) {
+  res.renderLayout('default/hbv', { title: 'HBV' });
+});
+
 module.exports = router;
