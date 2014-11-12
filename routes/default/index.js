@@ -9,7 +9,8 @@ router.get('/', function(req, res) {
 router.get('/sample', require('./sample'));
 
 router.get('/telering', function(req, res) {
-  res.renderLayout('default/telering', { title: 'Telering' });
+ var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  res.renderLayout('default/telering', { title: 'Telering', url : fullUrl });
 });
 
 router.get('/hbv', function(req, res) {
