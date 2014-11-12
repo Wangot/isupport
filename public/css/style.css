@@ -40,6 +40,10 @@ html, body {
   margin-bottom: 10px;
 }
 
+ul.header-nav {
+  padding-right: 100px;
+}
+
 .header-nav > li {
   display: inline-block;
 }
