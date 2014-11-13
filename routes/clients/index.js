@@ -13,4 +13,14 @@ router.get('/fhi', function(req, res) {
   res.renderLayout('clients/fhi', { title: 'FHI'});
 });
 
+router.get('/khio', function(req, res) {
+  res.renderLayout('clients/khio', { title: 'KHIO'});
+});
+
+router.get('/eurosko', function(req, res) {
+  res.renderLayout('clients/eurosko', { title: 'EUROSKO'});
+});
+
+
+
 module.exports = router;
