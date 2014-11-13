@@ -20,11 +20,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.locals.site = {
+    'imento': 'http://www.imento.no/',
+    'staticUrl': 'http://imento.ubook.no'
+};
+
 app.use(function(req, res, next) {
     res.renderLayout = function(viewPage, options, layout){
         if(!layout) layout = 'main';
         var ejs = require('ejs');
         var fs = require('fs');
+        options.site = app.locals.site;
         var content = ejs.compile(
                 fs.readFileSync(__dirname + '/views/'+ viewPage +'.ejs', 'utf8')
             )(options);
