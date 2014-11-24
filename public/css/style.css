@@ -69,12 +69,15 @@ ul.header-nav {
   padding-left: 10px;
 }
 
-.header-nav > li > a.btn:hover {
+.header-nav > li > a.btn:hover{
 	border-color: #F17122;
 }
 
 .header-nav > li > a:hover,
-.header-nav > li > a:focus {
+.header-nav > li > a:focus,
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
   background-color: transparent;
 }
 
@@ -85,8 +88,13 @@ ul.header-nav {
   border-bottom-color: #fff;
 }
 
+.dropdown-menu > li > a:hover {
+  background-color: transparent;
+  color: #F17122;
+}
+
 .fb-tab-btn {
-  position: fixed;
+  /*position: fixed;*/
   bottom: -3px;
   right: 20px;
   background: #5E8C00;
@@ -129,4 +137,46 @@ ul.header-nav {
 
 .nav.navbar-nav.navbar-right.header-nav {
   margin-top: 8px;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-color: transparent;
+}
+
+.jumbotron h1, .jumbotron p {
+  font-weight: bold;
+} 
+
+.jumbotron .green {
+  color: #5E8C00;
+}
+
+
+.btn-imento {
+  background: #5E8C00;
+  border-radius: 3px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.btn-imento:hover {
+  color: #FFF;
+  opacity: 0.8;
+}
+
+.btn-imento:focus {
+  border-color: #5E8C00;
+  color: #FFF;
+  outline: #5E8C00;
+}
+
+.btn-container {
+  margin-top: 50px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }

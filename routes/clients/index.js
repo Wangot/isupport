@@ -13,6 +13,10 @@ router.get('/fhi', function(req, res) {
   res.renderLayout('clients/fhi', { title: 'FHI'});
 });
 
+router.get('/forskningsradet', function(req, res) {
+  res.renderLayout('clients/forskningsradet', { title: 'forskningsradet'});
+});
+
 router.get('/khio', function(req, res) {
   res.renderLayout('clients/khio', { title: 'KHIO'});
 });

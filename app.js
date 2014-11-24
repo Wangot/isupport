@@ -22,8 +22,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.site = {
     'imento': 'http://www.imento.no/',
-    'staticUrl': 'http://imento.ubook.no'
+    // 'staticUrl': 'http://imento.ubook.no'
+    'staticUrl': 'http://localhost:3000'
+
 };
+
+app.set("views", __dirname + '/views');
 
 app.use(function(req, res, next) {
     res.renderLayout = function(viewPage, options, layout){
