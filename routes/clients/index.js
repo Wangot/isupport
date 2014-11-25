@@ -6,11 +6,13 @@ router.get('/telering', function(req, res) {
 });
 
 router.get('/hbv', function(req, res) {
-  res.renderLayout('clients/hbv', { title: 'HBV'});
+  var logoPath = '/images/hbv_logo.png';
+  res.renderLayout('clients/hbv', { title: 'HBV', logo : logoPath});
 });
 
 router.get('/fhi', function(req, res) {
-  res.renderLayout('clients/fhi', { title: 'FHI'});
+  var logoPath = '/images/FHI.png';
+  res.renderLayout('clients/fhi', { title: 'FHI', logo: logoPath});
 });
 
 router.get('/forskningsradet', function(req, res) {

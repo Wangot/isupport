@@ -75,8 +75,8 @@ ul.header-nav {
 
 .header-nav > li > a:hover,
 .header-nav > li > a:focus,
-.nav .open > a, 
-.nav .open > a:hover, 
+.nav .open > a,
+.nav .open > a:hover,
 .nav .open > a:focus {
   background-color: transparent;
 }
@@ -144,22 +144,19 @@ ul.header-nav {
   color: #fff;
   position: relative;
   background-color: transparent;
+  margin-top: 30px;
 }
 
 .jumbotron h1, .jumbotron p {
   font-weight: bold;
-} 
-
-.jumbotron .green {
-  color: #5E8C00;
 }
-
 
 .btn-imento {
   background: #5E8C00;
   border-radius: 3px;
   color: #FFF;
   font-weight: bold;
+  padding: 10px;
 }
 
 .btn-imento:hover {
