@@ -22,8 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.site = {
     'imento': 'http://www.imento.no/',
-    // 'staticUrl': 'http://imento.ubook.no'
-    'staticUrl': 'http://localhost:3000'
+    'staticUrl': 'http://imento.ubook.no'
+    //'staticUrl': 'http://localhost:3000'
 
 };
 
