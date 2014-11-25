@@ -16,7 +16,8 @@ router.get('/fhi', function(req, res) {
 });
 
 router.get('/forskningsradet', function(req, res) {
-  res.renderLayout('clients/forskningsradet', { title: 'forskningsradet'});
+  var logoPath = '/images/forskningsradet-logo2.png';
+  res.renderLayout('clients/fkr', { title: 'forskningsradet', logo : logoPath});
 });
 
 router.get('/khio', function(req, res) {
