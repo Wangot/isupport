@@ -17,6 +17,7 @@ router.get('/fhi', function(req, res) {
 
 router.get('/forskningsradet', function(req, res) {
   var logoPath = '/images/forskningsradet-logo2.png';
+  // var logoPath = '/images/fr_logo.png';
   res.renderLayout('clients/fkr', { title: 'forskningsradet', logo : logoPath});
 });
 
